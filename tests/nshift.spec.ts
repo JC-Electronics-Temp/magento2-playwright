@@ -1,7 +1,7 @@
 import { APIRequestContext, test, expect, request } from '@playwright/test';
 
-const baseUrl = 'https://api.unifaun.com/rs-extapi/v1/delivery-checkouts/fe6956bd-6a68-4cc3-9165-5b6a617b694c';
-const bearerToken = 'FFVJIOXGGJA5X7AN-OUJLBRCWOLPGWYMKZ7UJ53YV'; // Replace with your actual Bearer token
+const baseUrl = process.env.NSHIFTBASEURL;
+const bearerToken = process.env.NSHIFTBEARERTOKEN
 const testExpress = false;
 
 const testCases = [

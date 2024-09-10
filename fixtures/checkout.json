@@ -1,0 +1,70 @@
+{
+  "shippingAddresses": [
+    {
+      "title": "Netherlands",
+      "products": [
+        { "sku": "6SE7021-3EB20", "condition": "Refurbished", "qty": 1, "is_urgent": false },
+        { "sku": "6AV6645-0AA01-0AX0", "condition": "Refurbished", "qty": 2, "is_urgent": false }
+      ],
+      "address": {
+        "customer_type": "consumer",
+        "email": "john.doe@example.com",
+        "firstname": "John",
+        "lastname": "Doe",
+        "street": [
+          "Teststraat",
+          10
+        ],
+        "postcode": "8913CV",
+        "city": "Leek",
+        "country": "NL",
+        "telephone": "0123456789"
+      },
+      "expectedShippingMethods": [
+        {
+          "code": "ust01",
+          "price": 0
+        },
+        {
+          "code": "usa01",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "title": "Germany",
+      "products": [
+        { "sku": "6SE7021-3EB20", "condition": "Refurbished", "qty": 1, "is_urgent": false },
+        { "sku": "6AV6645-0AA01-0AX0", "condition": "Refurbished", "qty": 2, "is_urgent": false }
+      ],
+      "address": {
+        "customer_type": "consumer",
+        "email": "john.doe@example.com",
+        "firstname": "John",
+        "lastname": "Doe",
+        "street": [
+          "Teststrasse",
+          10
+        ],
+        "postcode": "12345",
+        "city": "Ort",
+        "country": "DE",
+        "telephone": "0123456789"
+      },
+      "expectedShippingMethods": [
+        {
+          "code": "ust01",
+          "price": 0
+        },
+        {
+          "code": "usa01",
+          "price": 40
+        }
+      ]
+    }
+  ],
+  "routes": {
+    "cart": "/checkout/cart",
+    "checkout": "/checkout"
+  }
+}

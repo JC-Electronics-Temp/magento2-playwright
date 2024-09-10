@@ -1,7 +1,15 @@
 import { Page, APIRequestContext, expect } from '@playwright/test';
-import { ProductUtils } from './catalogUtils';
-import { login } from './loginUtils';
-import { fetchMockData } from './mockDataUtils';
+import checkout from '../fixtures/checkout.json';
+
+export default class Checkout {
+  static async gotoCartPage(page: Page) {
+    await page.goto(checkout.routes.cart);
+  }
+
+  static async clickCheckoutButton(page: Page) {
+    await page.locator('#checkout-link-button').click();
+  }
+}
 
 export async function handleLoginAndCart(page: Page, loggedin: boolean) {
   if (loggedin) {

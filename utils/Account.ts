@@ -1,8 +1,12 @@
-// utils/authUtils.ts
-
 import { Page } from '@playwright/test';
 
-export async function login(page: Page, username: string, password: string) {
+export default class Account {
+  static async login(page: Page, username: string, password: string) {
+
+  }
+}
+
+export async function account(page: Page, username: string, password: string) {
   // Navigate to the login page
   await page.goto('customer/account/login/');
 
